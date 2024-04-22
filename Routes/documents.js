@@ -17,6 +17,7 @@ let data = {
 };
 
 const getDocuments = async (req, res) => {
+  console.log("🚀 ~ getDocuments ~ req:", req.user);
   try {
     const email = req.user;
     res.status(200).send(data[email]);
