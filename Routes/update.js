@@ -17,7 +17,7 @@ let data = {
   ],
 };
 
-const getDocuments = async (req, res) => {
+const getUpdate = async (req, res) => {
   try {
     const token = await req.kauth.grant.access_token.content;
     const roles = await token.resource_access?.aritha?.roles;
@@ -36,5 +36,5 @@ const getDocuments = async (req, res) => {
   }
 };
 
-router.get("/", getDocuments);
+router.get("/", getUpdate);
 export default router;

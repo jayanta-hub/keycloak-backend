@@ -12,5 +12,6 @@ export default async (req, res, next) => {
   console.log("🚀 ~ decodedToken:", decodedToken);
   // const { email } = decodedToken;
   // req.user = email;
-  // next();
+  req.tokenData = decodedToken;
+  next();
 };

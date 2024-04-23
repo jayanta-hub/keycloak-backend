@@ -5,11 +5,11 @@
     "resource": "aritha",
     "verify-token-audience": true,
     "credentials": {
-      "secret": "b6YD9Jprikh6rWtPZLq5YHnpr7Dkyfwm"
+        "secret": "b6YD9Jprikh6rWtPZLq5YHnpr7Dkyfwm"
     },
     "use-resource-role-mappings": true,
     "confidential-port": 0,
     "policy-enforcer": {
-      "credentials": {}
+        "credentials": {}
     }
-  }
+}
